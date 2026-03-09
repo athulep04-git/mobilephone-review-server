@@ -4,7 +4,7 @@ const jsonServer = require('json-server')
 
 const previewServer = jsonServer.create()
 
-const middleware=previewServer.defaults()
+const middleware=jsonServer.defaults()
 
 const router=jsonServer.router('db.json')
 
